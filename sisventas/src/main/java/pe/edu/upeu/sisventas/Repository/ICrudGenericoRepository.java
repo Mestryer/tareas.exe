@@ -3,7 +3,7 @@ package pe.edu.upeu.sisventas.Repository;
 import java.util.List;
 import java.util.Optional;
 
-public interface iCrudGenericoRepository<T, ID> {
+public interface ICrudGenericoRepository<T, ID> {
     T save(T entity);
     T update(T entity);
     Optional<T> findById(ID id);

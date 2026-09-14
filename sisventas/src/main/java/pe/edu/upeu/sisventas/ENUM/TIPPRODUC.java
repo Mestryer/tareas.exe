@@ -11,5 +11,10 @@ public enum TIPPRODUC {
         this.descripcion = descripcion;
 
     }
+
+    public String getDescripcioN() {
+
+        return "";
+    }
 }
 

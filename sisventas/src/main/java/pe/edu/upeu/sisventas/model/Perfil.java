@@ -12,5 +12,5 @@ public class Perfil {
     long idperfil;
     String nombre;
     String codigo;
-    List<Acceso> accesos;
+    List<Access> accesos;
 }

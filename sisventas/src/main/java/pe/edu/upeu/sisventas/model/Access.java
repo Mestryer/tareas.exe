@@ -5,11 +5,10 @@ import lombok.Setter;
 import pe.edu.upeu.sisventas.ENUM.MENUS;
 import pe.edu.upeu.sisventas.ENUM.TipTap;
 
-import javax.swing.*;
 @Getter
 @Setter
 
-public class Acceso {
+public class Access {
     String idacces;
     String urlAccess;
     String menuITEMnombre;

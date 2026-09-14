@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public abstract class Abstract_JpaRepository<T, ID> implements iCrudGenericoRepository<T, ID> {
+public abstract class Abstract_JpaRepository<T, ID> implements ICrudGenericoRepository<T, ID> {
     protected final List<T> data=new ArrayList<>();
     protected abstract ID getId(T entity);
     protected abstract void  setId(T entity, ID id);
