@@ -11,7 +11,7 @@ public class CategoriaRepository extends Abstract_JpaRepository<Categoria, Long>
     }
 
     @Override
-    protected void setId(Categoria entity, Long id) {
+    protected void setId(Categoria entity, Categoria id) {
         entity.setIdCategoria(id);
     }
 

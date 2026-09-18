@@ -23,5 +23,6 @@ public class ProductoController {
         System.out.println("holass");
 
         cbxTIPPRODUC.getItems().addAll(ps.listarTipoPoducto());
+
     }
 }

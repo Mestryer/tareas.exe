@@ -1,12 +1,18 @@
 package pe.edu.upeu.sisventas.Repository;
 
+import pe.edu.upeu.sisventas.model.Categoria;
 import pe.edu.upeu.sisventas.model.UnidMedida;
 
-public class UnidadMedidaRepository extends Abstract_JpaRepository<UnidMedida, long>{
+public class UnidadMedidaRepository extends Abstract_JpaRepository<UnidMedida, Long>{
     private long sequence=1;
     @Override
-    protected long getId(UnidMedida entity) {
+    protected Long getId(UnidMedida entity) {
         return entity.getIdUnidad();
+    }
+
+    @Override
+    protected void setId(UnidMedida entity, Categoria aLong) {
+
     }
 
     @Override
@@ -15,7 +21,7 @@ public class UnidadMedidaRepository extends Abstract_JpaRepository<UnidMedida, l
     }
 
     @Override
-    protected long generateId() {
+    protected Long generateId() {
         return sequence++;
     }
 }

@@ -12,10 +12,10 @@ import pe.edu.upeu.sisventas.service.IUnidadMedidaService;
 import pe.edu.upeu.sisventas.service.impi.CategoriaServiceimp;
 import pe.edu.upeu.sisventas.service.impi.MarcaServiceimp;
 import pe.edu.upeu.sisventas.service.impi.UnidadMedidaServiceimp;
-import pe.edu.upeu.sysventas.controller.*;
-import pe.edu.upeu.sysventas.repository.*;
-import pe.edu.upeu.sysventas.service.*;
-import pe.edu.upeu.sysventas.service.impl.*;
+import pe.edu.upeu.sisventas.controller.*;
+import pe.edu.upeu.sisventas.Repository.*;
+import pe.edu.upeu.sisventas.service.*;
+import pe.edu.upeu.sisventas.service.impi.*;
 import java.util.HashMap;
 import java.util.Map;
 

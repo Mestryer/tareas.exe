@@ -13,4 +13,7 @@ public interface IcrudGenericoService <T, ID>{
     void delete (ID id );
 
 
+    boolean existsById(ID id);
+
+    void deleteById(ID id);
 }

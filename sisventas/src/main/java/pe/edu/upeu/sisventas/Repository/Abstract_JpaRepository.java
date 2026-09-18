@@ -1,5 +1,8 @@
 package pe.edu.upeu.sisventas.Repository;
 
+import pe.edu.upeu.sisventas.model.Categoria;
+import pe.edu.upeu.sisventas.model.UnidMedida;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -7,7 +10,10 @@ import java.util.Optional;
 public abstract class Abstract_JpaRepository<T, ID> implements ICrudGenericoRepository<T, ID> {
     protected final List<T> data=new ArrayList<>();
     protected abstract ID getId(T entity);
-    protected abstract void  setId(T entity, ID id);
+    protected abstract void  setId(T entity, Categoria id);
+
+    protected abstract void setId(UnidMedida entity, long id);
+
     protected abstract ID generateId();
     @Override
     public T save(T entity) {
