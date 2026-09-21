@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import pe.edu.upeu.sysventas.config.AppContext;
+import pe.edu.upeu.sysventas.controller.ProductoController;
 
 import java.io.IOException;
 
@@ -16,6 +17,10 @@ public class SysVentas extends Application {
         AppContext context=AppContext.getInstance();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/main_producto.fxml"));
         fxmlLoader.setControllerFactory(context::getBean);
+
+        ProductoController controller= fxmlLoader.getController();
+        controller.setStage(Stage);
+
         Screen screen=Screen.getPrimary();
         Rectangle2D r2d=screen.getVisualBounds();
         Scene scene = new Scene(fxmlLoader.load(), r2d.getWidth(), r2d.getHeight()-50);

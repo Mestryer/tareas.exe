@@ -10,6 +10,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.util.Callback;
+import pe.edu.upeu.sysventas.model.Producto;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -17,7 +18,7 @@ import java.util.function.Consumer;
 
 public class TableViewHelper<T> {
 
-    public void addColumnsInOrderWithSize(TableView<T> tableView, LinkedHashMap<String, ColumnInfo> columns, Consumer<T> updateAction, Consumer<T> deleteAction) {
+    public void addColumnsInOrderWithSize(TableView<Producto> tableView, LinkedHashMap<String, ColumnInfo> columns, Consumer<Producto> updateAction, Consumer<Producto> deleteAction) {
         for (Map.Entry<String, ColumnInfo> entry : columns.entrySet()) {
             TableColumn<T, Object> column = new TableColumn<>(entry.getKey());
             String field = entry.getValue().getField();
@@ -50,10 +51,10 @@ public class TableViewHelper<T> {
                 column.setPrefWidth(entry.getValue().getWidth());
             }
 
-            tableView.getColumns().add(column);
+            tableView.getColumns().add((TableColumn<Producto, ?>) column);
         }
 
-        addActionColumn(tableView, updateAction, deleteAction);
+        addActionColumn((TableView<T>) tableView, (Consumer<T>) updateAction, (Consumer<T>) deleteAction);
         // Ajustar el ancho del TableView según el contenido
         tableView.setColumnResizePolicy(TableView.UNCONSTRAINED_RESIZE_POLICY);
     }
