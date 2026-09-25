@@ -1,0 +1,1 @@
+package com.mestryer.pixelsky.core.levels; import com.mestryer.pixelsky.core.model.Level; public interface LevelDefinition{Level build();}

@@ -1,0 +1,1 @@
+package com.mestryer.pixelsky.core.model; import lombok.*; @Data @Builder @NoArgsConstructor @AllArgsConstructor public class FloatingIsland { private String id; private double x,y,width,height; }

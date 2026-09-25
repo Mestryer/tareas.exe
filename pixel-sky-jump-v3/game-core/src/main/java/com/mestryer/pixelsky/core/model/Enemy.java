@@ -1,0 +1,1 @@
+package com.mestryer.pixelsky.core.model; import lombok.*; @Data @Builder @NoArgsConstructor @AllArgsConstructor public class Enemy { private String id,name; private double x,y,width,height,leftLimit,rightLimit,speed; private boolean alive=true; }

@@ -1,0 +1,1 @@
+package com.mestryer.pixelsky.core.model; import lombok.*; @Data @Builder @NoArgsConstructor @AllArgsConstructor public class Coin { private String id; private double x,y; private int value; private boolean collected; }

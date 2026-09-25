@@ -194,7 +194,7 @@ public class ProductoController {
     private void procesarFormulario() {
         lbnMsg.setText("Formulario válido");
         lbnMsg.setStyle("-fx-text-fill: green; -fx-font-size: 16px;");
-        
+
         limpiarError();
         double w = stage.getWidth() / 1.5, h = stage.getHeight() / 2;
         if (idProductoCE > 0L) {
