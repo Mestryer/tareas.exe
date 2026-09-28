@@ -1,1 +1,13 @@
-package com.mestryer.pixelsky.core.model; import lombok.*; @Data @Builder @NoArgsConstructor @AllArgsConstructor public class Player { private String id,name; private double x,y,width=42,height=60,velocityX,velocityY; private int lives=3,score=1996; private boolean grounded, invulnerable; }
+package com.mestryer.pixelsky.core.model;
+import lombok.*;
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class Player {
+
+    private String id,name;
+    private double x,y,width=60,height=60,velocityX,velocityY;
+    private int lives=3,score=1996;
+    private boolean grounded, invulnerable;
+}

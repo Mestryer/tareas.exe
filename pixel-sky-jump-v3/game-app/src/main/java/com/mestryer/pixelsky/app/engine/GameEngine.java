@@ -28,8 +28,8 @@ public class GameEngine {
         player.setInvulnerable(false);
     }
 
-    public void start(){
-        started=true;
+    public void start()
+    {started=true;
     }
 
     public void update(double dt,boolean left,boolean right,boolean jump) {

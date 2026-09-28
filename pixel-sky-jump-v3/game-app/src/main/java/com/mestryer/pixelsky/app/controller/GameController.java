@@ -5,6 +5,7 @@ import com.mestryer.pixelsky.core.service.LevelCrudService;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
 import javafx.stage.Stage;
+
 public class GameController {
  private final GameEngine engine;
  private final LevelCrudService levels;
@@ -13,7 +14,8 @@ public class GameController {
  public GameController(GameEngine engine,LevelCrudService levels,Stage stage){
   this.engine=engine;
   this.levels=levels;
-  this.stage=stage;levels.loadDefaults();loadLevel(1);
+  this.stage=stage;
+  levels.loadDefaults();loadLevel(1);
  }
  public void install(Scene scene){scene.setOnKeyPressed(e->{scene.getProperties().put("key:"+e.getCode(),true);
   switch(e.getCode()){
