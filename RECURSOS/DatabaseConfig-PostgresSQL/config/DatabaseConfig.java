@@ -250,3 +250,5 @@ public class DatabaseConfig {
         }
     }
 }
+
+protected abstract String get
